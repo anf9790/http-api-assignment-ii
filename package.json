@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/anf9790/http-api-assignment-ii/issues"
   },
-  "homepage": "https://github.com/anf9790/http-api-assignment-ii#readme"
+  "homepage": "https://github.com/anf9790/http-api-assignment-ii#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-plugin-import": "^2.25.3"
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "http-api-assignment-ii",
+  "version": "1.0.0",
+  "description": "A simple HTTP API project built with Node.js using GET, HEAD, & POST methods.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anf9790/http-api-assignment-ii.git"
+  },
+  "author": "Alessandro Fiorella",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/anf9790/http-api-assignment-ii/issues"
+  },
+  "homepage": "https://github.com/anf9790/http-api-assignment-ii#readme"
+}

@@ -1,4 +1,4 @@
-// Note this object is purely in memory (nothing will stay forever). 
+// Note this object is purely in memory (nothing will stay forever).
 // when node shuts down this will be cleared. Same when the heroku app shuts down from inactivity.
 const users = {};
 
@@ -26,8 +26,8 @@ const getUsers = (request, response) => {
 
 // Get meta info about user object.
 const getUsersMeta = (request, response) => {
-    respondJSONMeta(request, response, 200);
-}
+  respondJSONMeta(request, response, 200);
+};
 
 // Add a user from a POST body.
 const addUser = (request, response, body) => {
@@ -62,7 +62,8 @@ const addUser = (request, response, body) => {
     responseJSON.message = 'Created Successfully';
     return respondJSON(request, response, responseCode, responseJSON);
   }
-  // 204 has an empty payload, just a success. It cannot have a body, so we just send a 204 without a message
+  // 204 has an empty payload, just a success.
+  //  It cannot have a body, so we just send a 204 without a message
   return respondJSONMeta(request, response, responseCode);
 };
 
@@ -76,12 +77,12 @@ const notFound = (request, response) => {
 
   // Return a 404 with an error message
   respondJSON(request, response, 404, responseJSON);
-}
+};
 
 // Returns a 404 not found without message.
 const notFoundMeta = (request, response) => {
-    respondJSONMeta(request, response, 404);
-}
+  respondJSONMeta(request, response, 404);
+};
 
 // Public Exports
 module.exports = {
